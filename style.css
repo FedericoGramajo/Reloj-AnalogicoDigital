@@ -1,0 +1,39 @@
+body {
+  background-color: #0f309e;
+}
+@font-face {
+  font-family: "DS-Digital";
+  src: url("../Reloj/DS-DIGIT.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+div-digital {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "DS-Digital";
+  color: aquamarine;
+  font-size: 10rem;
+  text-align: center;
+}
+
+/* Para que sea responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 5rem;
+    color: rgb(250, 250, 250);
+    text-align: center;
+  }
+  h2 {
+    font-size: 5rem;
+    color: rgb(250, 250, 250);
+    text-align: center;
+  }
+}
