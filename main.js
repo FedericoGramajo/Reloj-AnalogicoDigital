@@ -13,3 +13,28 @@ setInterval(() =>{
 generarHora();
 },100);
 
+
+function horaAnalogico(){
+horaAhora= new Date();
+horas=horaAhora.getHours();
+minutos= horaAhora.getMinutes() ;
+segundos=horaAhora.getSeconds();
+
+  porcenHoras = horas>=12 ? horas/12*360 : horas/24*360;
+  porcenHoras += minutos / 60 * 30
+
+  porcenMinutos = minutos / 60 * 360;
+  porcenSegundos = segundos/ 60 * 360;
+
+  document.getElementById("horas").style.transform = `rotate( ${porcenHoras}deg)`;
+  document.getElementById("minutos").style.transform = `rotate( ${porcenMinutos}deg)`;
+  document.getElementById("segundos").style.transform = `rotate( ${porcenSegundos}deg)`;
+
+//   document.getElementById("horas").style.transform = "rotate("+ porcenHoras +"deg)";
+//   document.getElementById("minutos").style.transform = "rotate("+ porcenMinutos +"deg)";
+//   document.getElementById("segundos").style.transform = "rotate("+ porcenSegundos +"deg)";
+ }
+setInterval(() =>{
+    horaAnalogico();
+    },100);
+    
