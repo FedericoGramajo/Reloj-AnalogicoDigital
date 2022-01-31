@@ -20,7 +20,8 @@ horas=horaAhora.getHours();
 minutos= horaAhora.getMinutes() ;
 segundos=horaAhora.getSeconds();
 
-  porcenHoras = horas>=12 ? horas/12*360 : horas/24*360;
+  // porcenHoras = horas>=12 ? horas/12*360 : horas/12*360;
+  porcenHoras =   horas/12*360;
   porcenHoras += minutos / 60 * 30
 
   porcenMinutos = minutos / 60 * 360;

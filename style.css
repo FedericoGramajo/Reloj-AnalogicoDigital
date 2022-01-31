@@ -42,7 +42,9 @@ p {
     text-align: center;
   }
 } */
-
+#contenedor {
+  position: relative;
+}
 .reloj {
   padding: 100px;
   background-image: url(Agujas/giro.png);
@@ -52,7 +54,9 @@ p {
   background-size: 100%;
   border: 10px solid #555;
   display: flex;
-  margin-left: 650px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reloj img {
